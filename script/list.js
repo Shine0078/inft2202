@@ -32,8 +32,6 @@ NewListItems.appendChild(ListItemsContent);
 // Add element to list
 groceryList.appendChild(NewListItems);
 
-
-
 // All <li> elements
 var listItems = groceryList.getElementsByClassName("apple");
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
@@ -44,7 +42,6 @@ for (let i = 0; i < listItems.length; i++) {
     listItems.item(i).classList.add("cool");
   
 }
-
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
 // h2 element
