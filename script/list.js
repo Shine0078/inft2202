@@ -8,6 +8,7 @@ const newListItem = document.createElement("li");
 // Create text node
 const listItemContent = document
 // Add text node to element
+newListItem.appendChild(listItemContent);
 // Add element end of list
 
 // ADD NEW ITEM START OF LIST
