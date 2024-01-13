@@ -21,10 +21,11 @@ groceryList.appendChild(newListItem);
 
 
 // All <li> elements
-
+var listItems = groceryList.getElementsByClassName("li");
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 // Counter variable
 // Loop through elements
+
 // Change class to cool
 
 
