@@ -10,6 +10,7 @@ const listItemContent = document
 // Add text node to element
 newListItem.appendChild(listItemContent);
 // Add element end of list
+groceryList.appendChild(newListItem);
 
 // ADD NEW ITEM START OF LIST
 // Create element
