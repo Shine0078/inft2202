@@ -1,5 +1,6 @@
 // ADDING ITEMS TO START AND END OF LIST
 // Get the <ul> element
+var groceryList = document.getElementById("groceries");
 
 // ADD NEW ITEM TO END OF LIST
 // Create element
