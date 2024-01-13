@@ -25,8 +25,11 @@ var listItems = groceryList.getElementsByClassName("li");
 // ADD A CLASS OF COOL TO ALL LIST ITEMS
 // Counter variable
 // Loop through elements
-
-// Change class to cool
+for (let i = 0; i < listItems.length; i++) {    
+    // Change class to cool
+    listItems.item(i).classList.add("hueframe");
+  
+}
 
 
 // ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
