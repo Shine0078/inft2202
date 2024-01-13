@@ -4,6 +4,7 @@ var groceryList = document.getElementById("groceries");
 
 // ADD NEW ITEM TO END OF LIST
 // Create element
+const newListItem = document.createElement("li");
 // Create text node
 // Add text node to element
 // Add element end of list
