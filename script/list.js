@@ -50,6 +50,6 @@ var heading = document.querySelector("h2");
 // No. of <li> elements
 var itemCount = groceryList.getElementsByTagName("li").length;
 // Content
-var headingContent = "Buy groceries -->Total Items: " + itemCount ;
+var MainHeadingContent = "Buy groceries -->Total Items: " + itemCount ;
 // Update h2 using innerHTML (not textContent) because it contains markup
-heading.innerHTML = headingContent;
+heading.innerHTML = MainHeadingContent;
