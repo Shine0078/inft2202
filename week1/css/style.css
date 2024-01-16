@@ -12,13 +12,17 @@ body {
 	background-color: #000;
 	font-family: 'Oswald', 'Futura', sans-serif;
 	margin: 0; 
+	justify-content: center;
 	align-items: center;
+	height: 100vh;
 	padding: 0;}
 
 #page {
 	background-color: #403c3b;
-	margin: 0 auto 0 auto;}
+	margin: 0 auto 0 auto;
 	/* Responsive page rules at bottom of style sheet */
+	text-align: center;
+}
 
 h1 {
 	background-image: url(../images/kinglogo.png);
