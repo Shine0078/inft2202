@@ -1,0 +1,34 @@
+.top-header {
+  font-family: Clistoga, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#registration-form {
+  margin: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+#es7 {
+  color:#40916c;
+}
+
+div.main-content > div {
+  margin:10px;
+}
+
+#functions {
+  background-color: #bde0fe;
+  padding:10px;
+  border-radius: 10px;
+  width:50%;
+  height: 250px;
+}
+#parameters {
+  background-color: #ffb5a7;
+  padding:10px;
+  border-radius: 10px;
+  width:50%;
+  height: 265px;
+}
