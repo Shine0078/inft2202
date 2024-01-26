@@ -32,3 +32,10 @@ div.main-content > div {
   width:50%;
   height: 265px;
 }
+.error-message {
+  color: red;
+}
+
+.highlight-error {
+  background-color: #ffcccc; /* Light red background */
+}
