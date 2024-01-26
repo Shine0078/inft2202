@@ -76,16 +76,18 @@
             
             <div class="form-group col-md-6">
               <label for="usernameInput">Username:</label>
+              <!-- Added the "required" attribute -->
               <input
                   type="text"
                   class="form-control"
                   id="usernameInput"
-                  name="usernameInput"
                   placeholder="Username"
                   required
               />
-              
+              <p id="usernameError"></p>
           </div>
+          
+          
           
       
             <div class="form-group col-md-6">
@@ -123,6 +125,7 @@
                 class="form-control"
                 id="inputPhone5"
                 placeholder="Phone Number"
+                required
               />
               <p id="phoneError"></p>
             </div>
