@@ -70,9 +70,9 @@
   </head>
   <body>
     <div class="container">
-        <h1 class="top-header" style="text-align: center">Registration Form</h1>
-        <form id="registration-form" name="registration-form" onsubmit="">
-            <p id="generalError"></p>
+      <h1 class="top-header" style="text-align: center">Registration Form</h1>
+      <form id="registration-form" name="registration-form" onsubmit="">
+          <p id="generalError" class="error-message"></p>
             
             <div class="form-group col-md-6">
               <label for="usernameInput">Username:</label>
@@ -84,8 +84,7 @@
                   placeholder="Username"
                   required
                   />
-
-              <p id="usernameError"></p>
+                  <p id="usernameError" class="error-message"></p>
             </div>
 
             <div class="form-group col-md-6">
