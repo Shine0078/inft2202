@@ -27,7 +27,6 @@ function validateEmailAddressSimple(emailString) {
 * @returns {boolean}    validation result
 */
 function validateEmailAddressRegex(emailString) {
-    // note the / and / at the beginning and end of the expression
 
     var emailRegex = /^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$/;
     //return true if the email address is valid - how to use regex
