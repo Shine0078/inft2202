@@ -36,11 +36,26 @@ function validateEmailAddressRegex(emailString) {
 		&& emailString.match(emailRegex);
 }
 
+/**
+ * Validate the username using a regular expression
+ * @param {string} username    the username to validate
+ * @returns {boolean}          to indicate if the username is valid
+ */
+function validateUsername(username) {
+    // Use a regular expression for username validation
+    // Feel free to replace this with a more specific regex
+    var usernameRegex = /^[a-zA-Z0-9-_\.]{3,15}$/;
+
+    return !!username && typeof username === 'string'
+        && username.match(usernameRegex);
+}
+
 
 //TODO:
 // Make all fields required (HTML)
 // Add a pattern attribute in the telephone element (HTML)
 // Ensure the password is redacted into dots on screen when typed in (HTML) 
+
 // Create a function that knows if the username is valid (feel free to grab some RegEx from the Interwebs - cite source and test it!)
 // If it is not valid, be sure to update the #generalError <p></p> with a good error message and some highlighting (red background, maybe?)
 // Validate the username when the form is submitted
