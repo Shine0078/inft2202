@@ -40,7 +40,7 @@ function validateEmailAddressRegex(emailString) {
 //TODO:
 // Make all fields required (HTML)
 // Add a pattern attribute in the telephone element (HTML)
-// Ensure the password is redacted into dots on screen when typed in (HTML)
+// Ensure the password is redacted into dots on screen when typed in (HTML) 
 // Create a function that knows if the username is valid (feel free to grab some RegEx from the Interwebs - cite source and test it!)
 // If it is not valid, be sure to update the #generalError <p></p> with a good error message and some highlighting (red background, maybe?)
 // Validate the username when the form is submitted
