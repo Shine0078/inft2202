@@ -42,6 +42,7 @@ function validateEmailAddressRegex(emailString) {
 function validateUsername(username) {
  
     var usernameRegex = /^[a-z0-9_-]{3,15}$/;
+    //Refernces on cite Regex ="https://ihateregex.io/expr/username/"
     return !!username && typeof username === 'string'
         && username.match(usernameRegex);
 }
