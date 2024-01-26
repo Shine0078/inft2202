@@ -1,62 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>
-      JavaScript &amp; jQuery - Chapter 6: Events - Event Listener and Event
-      Object
-    </title>
-    <link
-      rel="stylesheet"
-      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
-    />
-  </head>
-  <body>
-    <div id="page" class="content">
-      <h1>List King</h1>
-      <h2>New Account</h2>
-      <form id="registration-form" method="post" action="">
-        <p id="generalError"></p>
-        <div class="form-group col-md-12">
-          <label for="username">Create a username: </label>
-          <input type="text" id="username" />
-          <div id="usernameFeedback"></div>
-        </div>
-        <div class="form-group col-md-12">
-          <label for="password">Create a password: </label>
-          <input type="text" id="password" />
-          <div id="passwordFeedback"></div>
-        </div>
-        <div class="form-group col-md-12">
-          <label for="inputEmail">Email</label>
-          <input
-            type="text"
-            class="form-control"
-            id="inputEmail"
-            placeholder="Email"
-          />
-          <div id="emailFeedback"></div>
-        </div>
-        <div class="form-group col-md-12">
-          <label for="inputEmail">Phone Number</label>
-          <input
-            type="tel"
-            class="form-control"
-            id="inputPhoneNum"
-            placeholder="Phone Number"
-          />
-          <div id="phoneFeedback"></div>
-        </div>
+    <title>HTML5 Validation & JavaScript</title>
 
-        <input type="submit" value="sign up" />
-      </form>
+    <!-- Added Bootstrap CSS -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Added custom style.css -->
+    <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <!-- Added heading for the registration form -->
+        <h1 class="top-header" style="text-align: center">Registration Form</h1>
+
+        <!-- Updated form attributes -->
+        <form id="registration-form" name="registration-form" onsubmit="">
+            <!-- Added a paragraph for displaying general error messages -->
+            <p id="generalError"></p>
+
+            <div class="form-group col-md-6">
+                <label for="usernameInput">Username</label>
+                <!-- Added "required" attribute for making the username field required -->
+                <input type="text" class="form-control" id="usernameInput" placeholder="Username" required />
+                <p id="usernameError"></p>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <!-- Added "required" attribute for making the email field required -->
+                <input type="text" class="form-control" id="inputEmail4" placeholder="Email" required />
+                <p id="emailError"></p>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <!-- Added "required" attribute for making the password field required and changed type to "password" -->
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required />
+                <p id="passwordError"></p>
+            </div>
+
+            <div class="form-group col-md-6">
+                <label for="inputPhone5">Phone</label>
+                <!-- Added "required" attribute for making the phone number field required -->
+                <!-- Added "pattern" attribute for adding a basic phone number pattern -->
+                <input type="tel" class="form-control" id="inputPhone5" placeholder="Phone Number" required pattern="[0-9]{10}" />
+                <p id="phoneError"></p>
+            </div>
+
+            <div class="form-group">
+                <!-- Added "onclick" attribute for calling a function to redact the password -->
+                <input id="submit-reg-form" type="submit" value="Send" name="Submit" class="btn btn-primary" />
+                <input type="reset" value="Reset" name="Reset" class="btn btn-outline-primary" />
+            </div>
+        </form>
     </div>
 
+    <!-- JavaScript file for additional form validation -->
     <script src="scripts/check-username-length.js"></script>
-  </body>
-</html> 
+</body>
+
+</html>
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
