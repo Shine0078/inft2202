@@ -32,10 +32,15 @@ div.main-content > div {
   width:50%;
   height: 265px;
 }
+
 .error-message {
   color: red;
+  background-color: #ffe6e6;  
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
 }
 
 .highlight-error {
-  background-color: #ffcccc; /* Light red background */
+  background-color: #ffcccc; 
 }

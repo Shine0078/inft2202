@@ -48,13 +48,68 @@ function validateUsername(username) {
 }
 
 
+
 //TODO:
 // Make all fields required (HTML)
 // Add a pattern attribute in the telephone element (HTML)
 // Ensure the password is redacted into dots on screen when typed in (HTML) 
 // Create a function that knows if the username is valid (feel free to grab some RegEx from the Interwebs - cite source and test it!)
-
 // If it is not valid, be sure to update the #generalError <p></p> with a good error message and some highlighting (red background, maybe?)
 // Validate the username when the form is submitted
 // Clear any additional error message and highlighting when the form is reset
 // COMMENT EVERYTHING :D
+/**
+ * Validate the form when submitted
+ * @returns {boolean} - Indicates if the form is valid
+ */
+function validateForm() {
+    // Clear any previous errors and highlighting
+    clearErrors();
+
+    // Validate email
+    const emailInput = document.getElementById("email");
+    if (!validateEmailAddressRegex(emailInput.value)) {
+        updateErrorMessage("Invalid email address.");
+        highlightError();
+        return false;
+    }
+
+    // Validate username
+    const usernameInput = document.getElementById("username");
+    if (!validateUsername(usernameInput.value)) {
+        updateErrorMessage("Invalid username.");
+        highlightError();
+        return false;
+    }
+
+    // Other form validation logic...
+
+    // Form is valid, continue with submission
+    return true;
+}
+
+/**
+ * Clear any additional error message and highlighting when the form is reset
+ */
+function clearErrors() {
+    const generalError = document.getElementById("generalError");
+    generalError.innerText = "";
+    generalError.classList.remove("highlight-error");
+}
+
+/**
+ * Update the #generalError <p></p> with an error message
+ * @param {string} message - The error message to display
+ */
+function updateErrorMessage(message) {
+    const generalError = document.getElementById("generalError");
+    generalError.innerText = message;
+}
+
+/**
+ * Highlight the #generalError with a red background
+ */
+function highlightError() {
+    const generalError = document.getElementById("generalError");
+    generalError.classList.add("highlight-error");
+}
