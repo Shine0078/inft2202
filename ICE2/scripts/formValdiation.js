@@ -86,8 +86,3 @@ function clearError(element) {
     element.innerHTML = '';
     element.style.backgroundColor = '';
 }
-
-
-
-
-
