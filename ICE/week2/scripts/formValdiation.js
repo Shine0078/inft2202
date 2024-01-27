@@ -79,7 +79,7 @@ function validateForm() {
 
 function clearErrors() {
     const generalError = document.getElementById("generalError");
-    generalError.innerText = "";
+    generalError.innerText = "This Text is INVALID , Please Try Again";
     generalError.classList.remove("highlight-error");
 }
 
