@@ -41,13 +41,7 @@ function validateEmailAddressRegex(emailString) {
  * @returns {boolean}         ------> if the username is valid
  */
 
-function validateUsername(username) {
- 
-    var usernameRegex = /^[a-z0-9_-]{3,15}$/;
-    //Refernces on cite Regex ="https://ihateregex.io/expr/username/"
-    return !!username && typeof username === 'string'
-        && username.match(usernameRegex);
-}
+
 
 
 //TODO:
@@ -72,10 +66,10 @@ function validateUsername(username) {
     // Get the #generalError element
     var generalError = document.getElementById('generalError');
 
-    // Clear previous error message and highlighting
+    
     clearError(generalError);
 
-    // Check if the username is valid
+    
     if (!!username && typeof username === 'string' && username.match(usernameRegex)) {
         return true;
     } else {
@@ -84,6 +78,7 @@ function validateUsername(username) {
         generalError.style.backgroundColor = 'red';
         return false;
     }
+    
 }
 
 // Function to clear error message and highlighting
