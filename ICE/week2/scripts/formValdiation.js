@@ -59,7 +59,38 @@ function validateUsername(username) {
 // Validate the username when the form is submitted
 // Clear any additional error message and highlighting when the form is reset
 // COMMENT EVERYTHING :D
+/*
+ * Validate the username using a regular expression
+ * @param {string} username   ------> the username to validate
+ * @returns {boolean}         ------> if the username is valid
+ */
+function validateUsername(username) {
+    // Regular expression for a valid username
+    // Note: This is just an example. You might need to adjust it based on your specific requirements.
+    var usernameRegex = /^[a-z0-9_-]{3,15}$/;
 
+    // Get the #generalError element
+    var generalError = document.getElementById('generalError');
+
+    // Clear previous error message and highlighting
+    clearError(generalError);
+
+    // Check if the username is valid
+    if (!!username && typeof username === 'string' && username.match(usernameRegex)) {
+        return true;
+    } else {
+        // Update the error message and apply highlighting
+        generalError.innerHTML = "Invalid username. Please use only lowercase letters, numbers, hyphens, and underscores (3-15 characters).";
+        generalError.style.backgroundColor = 'red';
+        return false;
+    }
+}
+
+// Function to clear error message and highlighting
+function clearError(element) {
+    element.innerHTML = '';
+    element.style.backgroundColor = '';
+}
 
 
 
