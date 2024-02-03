@@ -57,7 +57,7 @@ function addReplaceRemove() {
     $('p.grumpy').replaceWith(`<p>${newText}</p>`);
 }
 
-//cssSelectors();
-//traversingTheDOM();
-//filtering();
+cssSelectors();
+traversingTheDOM();
+filtering();
 addReplaceRemove();

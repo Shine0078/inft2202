@@ -31,18 +31,14 @@ console.log(`Class is on ${tuesdayArray}`);
  * @param {*} x 
  * @returns 
  */
-function square(x) {
-    return x * x;
-}
+const square = (x) => x * x;
 
 let nums = new Array(1, 33, 22, 5);
-let squaredNums = nums.map(function(value) {
-    return square(value);
-})
+let squaredNums = nums.map(value => square(value));
 console.log(`Squared Values: ${squaredNums}`);
-
 // TODO: rewrite
 // let squaredNums = nums.map(function(value) {
 //     return square(value);
 // });
 // using arrow functions
+// Arrow function version
