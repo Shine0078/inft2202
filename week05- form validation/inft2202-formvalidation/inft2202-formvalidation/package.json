@@ -1,0 +1,17 @@
+{
+  "name": "inft2202-lesson6",
+  "version": "1.0.0",
+  "description": "Demo Project for INFT2202 - Lesson 5",
+  "main": "app.js",
+  "author": "Tom Tsiliopoulos",
+  "license": "MIT",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.12.0",
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.0"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.31"
+  }
+}
