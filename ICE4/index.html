@@ -26,7 +26,14 @@
 	</head>
 	<body>
 		<!-- create the nav bar with jquery -->
-		<div id="nav-holder"></div>
+		<div class="naviation">
+			<nav class="nav">
+				<a class="nav-link active" href="index.html">Home</a>
+				<a class="nav-link" href="slideshow.html">Slideshow</a>
+				<a class="nav-link disabled" id="username" href="#"></a>
+				<a class="nav-link" href="form.html">Form</a>
+			</nav>
+		</div>
 		<h2>Do you like mystery stories?</h2>
 		<div id="content-div">
 			<p>
@@ -61,6 +68,7 @@
 			</p>
 		</div>
 		<!-- TO DO: create a div with a p followed by a button that will toggle the p in the div -->
+		<button id- "<i class="toggle-off" aria-hidden="true"></i>">
 
 		<!-- import the scripts -->
 		<script type="module" src="./scripts/app.js"></script>
