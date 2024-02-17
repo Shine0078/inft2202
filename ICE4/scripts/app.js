@@ -110,24 +110,29 @@ if ($("#btnRegSubmit")) {
 
         // create a new user
         // you normally wouldn't do this unless you had validated, but we're going to do it to show how class memebers work in calling the validation
-        const unvalidated user = new userClass.User(
+        const unvalidated_user = new userClass.User(
 
-        );
+        
 
             // get the first name input
+            $("#inputFirst").val(),
 
             // get the last name input
+            $("#inputLast").val(),
 
             // get the username input
+            $("#inputUsername").val(),
 
             // get the email input
+            $("#inputEmail").val(),
 
             // get the password input
+            $("#inputPassword").val(),
 
 
 
         // debug statement for object
-        // console.log(`UserDetails: ${user.displayUser()}`)
+        console.log(`UserDetails: ${user.displayUser()}`)
 
         // validate first name
         $("#first-group").children(".errormessage").html(formValidation.validateFirst(unvalidated_user.firstname));
