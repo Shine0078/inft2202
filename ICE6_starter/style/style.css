@@ -1,0 +1,62 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+    background-color: #344e41;
+    color: #edede9;
+
+}
+
+#top-section {
+    display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+}
+
+h1 {
+    font-family: 'Graduate', cursive;
+    color: #a3b18a;
+    font-size: 60px;
+    margin: auto;
+}
+
+.desc-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    margin: 10px 40px;
+    font-size: 30px;
+}
+
+.desc-content > p {
+    margin: 10px;
+}
+
+button {
+    font-size: 20px;
+    background-color: #bfd8bd;
+    border: none;
+    border-radius: 5px;;
+}
+
+#descriptions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    margin: auto;
+}
+
+#output-container {
+    margin: 0 25px;
+    font-size: 30px;
+}
+
+#output {
+    font-size: 40px;
+    margin: 20px;
+    background-color: #a3b18a;
+    color: #081c15;
+    padding: 10px;
+    border-radius: 5px;
+    min-height: 50px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script
+			src="https://code.jquery.com/jquery-3.6.3.min.js"
+			integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+			crossorigin="anonymous"
+		></script>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@200&family=Graduate&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./style/style.css" />
+		<title>2 Different Ways to Laugh</title>
+	</head>
+	<body>
+		<section id="top-section">
+			<h1>XMLHttpResponse vs. Fetch</h1>
+			<div id="descriptions">
+				<div class="desc-content" id="xhr-content">
+					<p id="xhr-desc">XHR uses <strong>callbacks</strong></p>
+					<button id="xhrJoke">Show Joke (XHR)</button>
+				</div>
+
+				<div class="desc-content" id="fetch-content">
+					<p id="fetch-desc">fetch() uses Promises</p>
+					<button id="fetchJoke">Show Joke (Fetch)</button>
+				</div>
+			</div>
+		</section>
+
+		<br />
+		<br />
+
+		<div id="output-container">
+			Output:
+			<p id="output"></p>
+		</div>
+		<script src="./scripts/xhr_script.js"></script>
+		<script src="./scripts/fetch_script.js"></script>
+	</body>
+</html>
