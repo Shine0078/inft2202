@@ -12,7 +12,7 @@ const PIXABAY_API_KEY = '42719839-98907a030879af036f270ab81';
 const PIXABAY_URL = 'https://pixabay.com/api/?key=<API_KEY>';
 
 // https://pixabay.com/api/?key=42719839-98907a030879af036f270ab81&page=1&per_page=30
-// Constant for image count
+
 const IMAGE_COUNT = 30;
 
 
